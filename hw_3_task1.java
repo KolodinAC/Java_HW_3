@@ -16,9 +16,6 @@ public class hw_3_task1 {
 
     public static List<Integer> createListInt(int size) {
         Random random = new Random();
-        if (size == 0) {
-            size = random.nextInt(2, 100);
-        }
         List<Integer> list = new ArrayList<>(size);
         for (int i = 0; i < size; i++) {
             list.add(random.nextInt(100));
